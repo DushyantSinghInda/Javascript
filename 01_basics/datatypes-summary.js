@@ -32,4 +32,28 @@ const myFunction = function () {
   console.log("Hello world");
 };
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
+
+// **************************************************
+
+// Stack Memory (Primitive), Heap memory (Non-primitive)
+
+let myYoutubename = "Dushyantdotcom";
+
+let anotherName = myYoutubename;
+anotherName = "secondchannel";
+
+// console.log(myYoutubename);
+// console.log(anotherName);
+
+let userOne = {
+  email: "user@google.com",
+  upi: "dushyant@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "dushyant@example.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
