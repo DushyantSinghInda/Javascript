@@ -62,4 +62,16 @@ users[1].email;
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLogged")); //It will tell is their any key or not
+// console.log(tinderUser.hasOwnProperty("isLogged")); //It will tell is their any key or not
+
+const course = {
+  courseName: "JS in Hindi",
+  price: "999",
+  courseInstructor: "Hitesh",
+};
+
+// course.courseInstructor
+
+const { courseInstructor: instructor } = course;
+
+console.log(instructor);
